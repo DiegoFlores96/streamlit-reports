@@ -40,7 +40,7 @@ O acesso é totalmente restrito. O dashboard é atrelado ao setor e ao usuário:
 * **Deploy e Ambiente:** Para garantir reprodutibilidade e facilitar a implantação, o projeto conta com suporte a Docker, permitindo que toda a aplicação seja executada dentro de um container.
 
 ## Como Executar
-1. Clone o repositório: git clone https://github.com/DiegoFlores96/Estudo_Phyton.git
+1. Clone o repositório: git clone https://github.com/DiegoFlores96/streamlit-reports.git
 2. Entre na pasta: cd Estudo_Phyton/streamlit-reports
 3. Crie o ambiente virtual e ative-o.
 4. Instale as dependências: pip install -r requirements.txt
