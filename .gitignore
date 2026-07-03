@@ -1,0 +1,34 @@
+# Configurações e Credenciais Locais
+.env
+.env.develop
+.env.local
+
+# Arquivos temporários e compilados do Python
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.coverage
+
+# Testes, Cobertura de Código e Logs Locais
+**/.pytest_cache/
+**/.coverage
+**/htmlcov/
+**/test_output/
+**/test_output.txt
+**/test_results/
+**/test_logs/
+
+# Relatórios de Segurança e Rascunhos (Privacidade)
+**/SECURITY_REPORT/
+**/SECURITY_REPORT
+**/security_report.txt
+**/security_report.json
+**/security_report.md
+**/notebooks/
+**/notbooks/
+
+# Bancos de Dados Locais
+*.db
+*.sqlite
+*.sqlite3

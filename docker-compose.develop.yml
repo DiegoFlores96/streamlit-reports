@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  streamlit-reports:
+    container_name: streamlit-reports-develop
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env.develop
+    ports:
+      - "${HOST_PORT:-8501}:${STREAMLIT_SERVER_PORT:-8501}"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8501/_stcore/health').read()"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
